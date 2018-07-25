@@ -32,16 +32,8 @@ export default {
 			"Cloudy": {
 				"timeOfDay": {
 				    "Afternoon": {
-						"language": {
-							"Vietnamese": {
-								"type": "video",
-						        "url": "./img/vid.mp4"
-							},
-							"Other": {
-								"type": "image",
-								"url": "./img/bg-Afternoon-cloudy.png"
-							}
-						}
+						"type": "image",
+						"url": "./img/bg-Afternoon-rainy.png"
 					},
 					"Morning": {
 						"type": "image",
@@ -60,16 +52,8 @@ export default {
 			"Rainy": {
 				"timeOfDay": {
 					"Afternoon": {
-						"language": {
-							"Vietnamese": {
-								"type": "video",
-						        "url": "./img/vid.mp4"
-							},
-							"Other": {
-								"type": "image",
-								"url": "./img/bg-Afternoon-rainy.png"
-							}
-						}
+						"type": "image",
+						"url": "./img/bg-Afternoon-rainy.png"
 					},
 					"Morning": {
 						"type": "image",
@@ -88,16 +72,8 @@ export default {
 			"Other": {
 				"timeOfDay": {
 					"Afternoon": {
-						"language": {
-							"Vietnamese": {
-								"type": "video",
-						        "url": "./img/vid.mp4"
-							},
-							"Other": {
-								"type": "image",
-								"url": "./img/bg-Afternoon-sunny.png"
-							}
-						}
+						"type": "image",
+						"url": "./img/bg-Afternoon-rainy.png"
 					},
 					"Morning": {
 						"type": "image",
@@ -134,7 +110,7 @@ export default {
 					"Vietnamese&&Morning": "Blues thứ hai? Có một bữa ăn sáng tuyệt vời tại McBURGERS",
 					"Vietnamese&&Afternoon": "Thời gian ăn trưa! Giá trị bữa ăn bắt đầu chỉ với $ 1,99",
 					"Vietnamese&&Evening": "Đói bụng? McBURGERS Bữa tối được phục vụ",
-					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời {{day}} tại McBURGERS",
+					"Vietnamese&&Any": "Có một bữa ăn thứ hai tuyệt vời tại McBURGERS",
 					"Any&&Morning": "Monday Blues? Have An Amazing Breakfast At McBURGERS",
 					"Any&&Afternoon": "Time For Lunch! Value Meal Starts At Only $1.99",
 					"Any&&Evening": "Hungry? McBURGERS Dinner Treats Is Serving Now",
@@ -154,7 +130,7 @@ export default {
 					"Vietnamese&&Morning": "Chào buổi sáng! Bắt đầu một ngày với bữa sáng tuyệt vời tại McBURGERS",
 					"Vietnamese&&Afternoon": "Thời gian ăn trưa! Giá trị bữa ăn bắt đầu chỉ với $ 1,99",
 					"Vietnamese&&Evening": "Đói bụng? McBURGERS Bữa tối được phục vụ",
-					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời {{day}} tại McBURGERS",
+					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời vào thứ ba tại McBURGERS",
 					"Any&&Morning": "Good Morning! Start Your Day With An Amazing Breakfast At McBURGERS",
 					"Any&&Afternoon": "Time For Lunch! Value Meal Starts At Only $1.99",
 					"Any&&Evening": "Hungry? McBURGERS Dinner Treats Is Serving Now",
@@ -174,7 +150,7 @@ export default {
 					"Vietnamese&&Morning": "Chào buổi sáng! Bắt đầu một ngày với bữa sáng tuyệt vời tại McBURGERS",
 					"Vietnamese&&Afternoon": "Thời gian ăn trưa! Giá trị bữa ăn bắt đầu chỉ với $ 1,99",
 					"Vietnamese&&Evening": "Đói bụng? McBURGERS Bữa tối được phục vụ",
-					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời {{day}} tại McBURGERS",
+					"Vietnamese&&Any": "Có một bữa ăn thứ tư tuyệt vời tại McBURGERS",
 					"Any&&Morning": "Good Morning! Start Your Day With An Amazing Breakfast At McBURGERS",
 					"Any&&Afternoon": "Time For Lunch! Value Meal Starts At Only $1.99",
 					"Any&&Evening": "Hungry? McBURGERS Dinner Treats Is Serving Now",
@@ -194,7 +170,7 @@ export default {
 					"Vietnamese&&Morning": "Chào buổi sáng! Bắt đầu một ngày với bữa sáng tuyệt vời tại McBURGERS",
 					"Vietnamese&&Afternoon": "Thời gian ăn trưa! Giá trị bữa ăn bắt đầu chỉ với $ 1,99",
 					"Vietnamese&&Evening": "Đói bụng? McBURGERS Bữa tối được phục vụ",
-					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời {{day}} tại McBURGERS",
+					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời vào thứ Năm tại McBURGERS",
 					"Any&&Morning": "Good Morning! Start Your Day With An Amazing Breakfast At McBURGERS",
 					"Any&&Afternoon": "Time For Lunch! Value Meal Starts At Only $1.99",
 					"Any&&Evening": "Hungry? McBURGERS Dinner Treats Is Serving Now",
@@ -214,7 +190,7 @@ export default {
 					"Vietnamese&&Morning": "TGIF! Go Grab Một bữa ăn sáng tuyệt vời tại McBURGERS",
 					"Vietnamese&&Afternoon": "Thời gian ăn trưa! Giá trị bữa ăn bắt đầu chỉ với $ 1,99",
 					"Vietnamese&&Evening": "TGIF! Kỷ niệm nó với McBURGERS ăn tối!",
-					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời {{day}} tại McBURGERS",
+					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời vào thứ Sáu tại McBURGERS",
 					"Any&&Morning": "TGIF! Go Grab An Amazing Breakfast At McBURGERS",
 					"Any&&Afternoon": "Time For Lunch! Value Meal Starts At Only $1.99",
 					"Any&&Evening": "TGIF! Celebrate It With McBURGERS Dinner Treats!",
@@ -234,7 +210,7 @@ export default {
 					"Vietnamese&&Morning": "Chào buổi sáng! Bắt đầu một ngày với bữa sáng tuyệt vời tại McBURGERS",
 					"Vietnamese&&Afternoon": "Thời gian ăn trưa! Giá trị bữa ăn bắt đầu chỉ với $ 1,99",
 					"Vietnamese&&Evening": "Đói bụng? McBURGERS Bữa tối được phục vụ",
-					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời {{day}} tại McBURGERS",
+					"Vietnamese&&Any": "Có một bữa ăn thứ bảy tuyệt vời tại McBURGERS",
 					"Any&&Morning": "Good Morning! Start Your Day With An Amazing Breakfast At McBURGERS",
 					"Any&&Afternoon": "Time For Lunch! Value Meal Starts At Only $1.99",
 					"Any&&Evening": "Hungry? McBURGERS Dinner Treats Is Serving Now",
@@ -254,7 +230,7 @@ export default {
 					"Vietnamese&&Morning": "Chào buổi sáng! Bắt đầu một ngày với bữa sáng tuyệt vời tại McBURGERS",
 					"Vietnamese&&Afternoon": "Thời gian ăn trưa! Giá trị bữa ăn bắt đầu chỉ với $ 1,99",
 					"Vietnamese&&Evening": "Đói bụng? McBURGERS Bữa tối được phục vụ",
-					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời {{day}} tại McBURGERS",
+					"Vietnamese&&Any": "Có một bữa ăn chủ nhật tuyệt vời tại McBURGERS",
 					"Any&&Morning": "Good Morning! Start Your Day With An Amazing Breakfast At McBURGERS",
 					"Any&&Afternoon": "Time For Lunch! Value Meal Starts At Only $1.99",
 					"Any&&Evening": "Hungry? McBURGERS Dinner Treats Is Serving Now",
@@ -274,7 +250,7 @@ export default {
 					"Vietnamese&&Morning": "Chào buổi sáng! Bắt đầu một ngày với bữa sáng tuyệt vời tại McBURGERS",
 					"Vietnamese&&Afternoon": "Thời gian ăn trưa! Giá trị bữa ăn bắt đầu chỉ với $ 1,99",
 					"Vietnamese&&Evening": "Đói bụng? McBURGERS Bữa tối được phục vụ",
-					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời {{day}} tại McBURGERS",
+					"Vietnamese&&Any": "Có một bữa ăn tuyệt vời tại McBURGERS",
 					"Any&&Morning": "Good Morning! Start Your Day With An Amazing Breakfast At McBURGERS",
 					"Any&&Afternoon": "Time For Lunch! Value Meal Starts At Only $1.99",
 					"Any&&Evening": "Hungry? McBURGERS Dinner Treats Is Serving Now",
