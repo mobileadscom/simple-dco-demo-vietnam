@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dynamic Creative Optimization (DCO) Demo</title>
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Dynamic Creative Optimization (DCO) Demo" />
+  <meta property="twitter:description" content="MobileAds Dynamic Creative Optimization Demo shows how the content of ads can be dynamic based on real time conditions" />
+  <meta property="twitter:image" content="https://rmarepo.richmediaads.com/dco-demo/img/preview.png" />
+  <meta property="twitter:url" content="https://rmarepo.richmediaads.com/dco-demo/index.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dynamic Creative Optimization (DCO) Demo" />
+  <meta property="og:description" content="MobileAds Dynamic Creative Optimization Demo shows how the content of ads can be dynamic based on real time conditions" />
+  <meta property="og:image" content="https://rmarepo.richmediaads.com/dco-demo/img/preview.png" />
+  <meta property="og:url" content="https://rmarepo.richmediaads.com/dco-demo/index.html" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section" style="max-width: 320px;">
+      <h3>Toggle with the Options Below and See the Ad Change Dynamically!</h3>
+            <script type="text/javascript">
+        function applyCondition(val) {
+          var conds = {
+            Normal: {
+              language: 'Vietnamese'
+            },
+            Youtube: {
+              language: 'Vietnamese',
+              timeOfDay: 'Afternoon'
+            },
+            MondayMorning: {
+              language: 'Vietnamese',
+              timeOfDay: 'Morning',
+              day: 'Monday'
+            },
+            FridayMorning: {
+              language: 'Vietnamese',
+              timeOfDay: 'Morning',
+              day: 'Friday'
+            },
+            FridayEvening: {
+              language: 'Vietnamese',
+              timeOfDay: 'Evening',
+              day: 'Friday'
+            },
+            Japanese: {
+              device: 'Desktop',
+              language: 'Japanese'
+            },
+            Indonesian: {
+              device: 'Desktop',
+              language: 'Indonesian'
+            },
+            Normal: {
+              device: 'Desktop',
+              language: 'Vietnamese'
+            },
+            GMAP: {
+              device: 'Tablet',
+              weather: 'Sunny'
+            }
+          };
+
+          if (conds[val]) {
+            for (var i in conds[val]) {
+              document.getElementById(i).value = conds[val][i];
+            }
+            window.ad = new AdUnit(true);
+          }
+        }
+      </script>
+      <label for="conditions">Variations</label>
+      <select onchange="applyCondition(this.value)" id="conditions">
+        <optgroup label="Background">
+          <option value="Normal">Normal</option>
+          <option value="Youtube">Video</option>
+        </optgroup>
+
+        <optgroup label="Description">
+          <option value="MondayMorning">Monday Blues</option>
+          <option value="FridayMorning">TGIF Morning</option>
+          <option value="FridayEvening">TGIF Evening</option>
+        </optgroup>
+
+        <optgroup label="CTA Link">
+<!--           <option value="Japanese">McBURGERS Japan</option>
+          <option value="Indonesian">McBURGERS Indonesia</option> -->
+<!--           <option value="Vietnamese">McBURGERS Vietnam</option> -->
+          <option value="Normal">Normal</option>
+          <option value="GMAP">McBURGERS Google Map</option>
+        </optgroup>
+      </select><br>
+      <hr>
+      <br>
+      <label for="time" style="display: none;">Time</label>
+      <input id="time" onchange="window.ad = new AdUnit(true)" style="display: none;"><br style="display: none;">
+
+      <label for="timeOfDay">Thời gian trong ngày</label>
+      <span id="timeOfDayValue"></span>
+      <select onchange="window.ad = new AdUnit(true)" id="timeOfDay">
+        <option value="Morning">Buổi sáng</option>
+        <option value="Afternoon">Buổi trưa</option>
+        <option value="Evening">Buổi chiều</option>
+        <option value="Night">Buổi tối</option>
+      </select><br>
+
+      <label for="day">Ngày trong tuần</label>
+      <span id="dayValue"></span>
+      <select onchange="window.ad = new AdUnit(true)" id="day">
+        <option value="Monday">Thứ hai</option>
+        <option value="Tuesday">Thứ ba</option>
+        <option value="Wednesday">Thứ tư</option>
+        <option value="Thursday">Thứ năm</option>
+        <option value="Friday">Thứ sáu</option>
+        <option value="Saturday">Thứ bảy</option>
+        <option value="Sunday">Chủ nhật</option>
+      </select><br>
+
+      <label for="os" style="display: none;">Os</label>
+      <span id="osValue"></span>
+      <select onchange="window.ad = new AdUnit(true)" id="os" style="display: none;">
+        <option value="Win32">Windows</option>
+        <option value="Android">Android</option>
+        <option vaue="IOS">Ios</option>
+      </select><br style="display: none;">
+
+      <label for="language">Ngôn ngữ</label>
+      <span id="languageValue"></span>
+      <select onchange="window.ad = new AdUnit(true)" id="language">
+        <option value="Vietnamese">Tiếng Việt</option>
+        <option value="English">English</option>
+<!--         <option value="Indonesian">Indonesian</option>
+        <option value="Japanese">Japanese</option>  -->
+      </select><br>
+
+      <label for="device">Thiết bị</label>
+      <span id="deviceValue"></span>
+      <select onchange="window.ad = new AdUnit(true)" id="device">
+        <option value="Mobile">Mobile</option>
+        <option value="Tablet">Tablet</option>
+        <option value="Desktop">Desktop</option>
+      </select><br>
+
+      <label for="city">Thành phố</label>
+      <span id="cityValue"></span>
+      <input id="city" onchange="window.ad = new AdUnit(true)"><br>
+
+      <label for="country" style="display: none;">Country</label>
+      <select onchange="window.ad = new AdUnit(true)" id="country" style="display: none;">
+        <option value="MY">Malaysia</option>
+        <option value="ID">Indonesia</option>
+        <option value="JP">Japan</option>
+      </select><br>
+
+      <label for="weather">Thời tiết</label>
+      <span id="weatherValue"></span>
+      <select onchange="window.ad = new AdUnit(true)" id="weather">
+        <option value="Sunny">Nắng</option>
+        <option value="Cloudy">Nhiều mây</option>
+        <option value="Rainy">Mưa</option>
+      </select><br>
+    </div>
+  </div>
+
+  <div id="rma-widget"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
